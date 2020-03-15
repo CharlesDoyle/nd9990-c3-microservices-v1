@@ -1,0 +1,8 @@
+
+
+terraform.tfstate.backup
+udagram-cluster.tar.gz
+demo-kubeconfig
+pod-example
+lesson-4-Kubernetes/exercise/udacity-c3-deployment/k8s/.terraform
+

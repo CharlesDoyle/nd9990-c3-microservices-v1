@@ -1,0 +1,21 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: char2pie/reverseproxy 
+  backend_user:
+    build:
+      context: ../../udacity-c3-restapi-user
+    image: char2pie/udacity-restapi-user
+  backend_feed:
+    build:
+      context: ../../udacity-c3-restapi-feed  
+    image: char2pie/udacity-restapi-feed
+  frontend:
+    build:
+      context: ../../udacity-c3-frontend  
+    image: char2pie/udacity-frontend:local
+# this file is used to build four images, each from a Dockerfile
+# image: name_of_image
+# context: location_of_Dockerfile
